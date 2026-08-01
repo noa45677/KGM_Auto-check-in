@@ -1,3 +1,21 @@
+name: CI Cron
+  # You may pin to the exact commit or the version.
+  # uses: kategengler/ci-cron@181db7e5bac13d0b55b6f5c4a8567fd20154576b
+  uses: kategengler/ci-cron@v1.0.3
+  with:
+    # Branch to run CI on
+    branch: 
+    # Personal access token with repo scope
+    personal_token: 
+    # Email to use for the commit, defaults to cron@example.org
+    committer_email: # optional, default is cron@example.org
+    # Name to use for the commit, defaults to Cron CI
+    committer_name: # optional, default is Cron CI
+    # Prefix to use for the branch, defaults to cron-
+    branch_prefix: # optional, default is cron-
+    # Prefix to use for the commit message, defaults to Cron
+    commit_message_prefix: # optional, default is Cron
+
 name: main
 on:
   workflow_dispatch:
